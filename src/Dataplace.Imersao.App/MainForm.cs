@@ -21,8 +21,12 @@ namespace Dataplace.Imersao.App
                 Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<TotalCondicaoPagamentoView>();
             }), TipoMenuEnun.Relatorio);
 
-            AddMenu(new ToolStripMenuItem("Cancelar orçamentos em aberto", null, (object sender, EventArgs e) => {
+            AddMenu(new ToolStripMenuItem("Cancelar Orçamentos Abertos", null, (object sender, EventArgs e) => {
                 Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<CancelarOrcamentoView>();
+            }), TipoMenuEnun.Ferramenta);
+
+            AddMenu(new ToolStripMenuItem("Fechar Orçamentos Abertos", null, (object sender, EventArgs e) => {
+                Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<FecharOrcamentoView>();
             }), TipoMenuEnun.Ferramenta);
         }
     }
