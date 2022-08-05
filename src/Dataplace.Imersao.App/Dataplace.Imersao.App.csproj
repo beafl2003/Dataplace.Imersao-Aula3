@@ -43,10 +43,6 @@
     <Reference Include="Dataplace.Core.win">
       <HintPath>U:\Pack 2022.R3-S4\Install\Dataplace.Core.win.dll</HintPath>
     </Reference>
-    <Reference Include="Dataplace.Imersao.Presentation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>U:\Pack 2022.R3-S4\Install\Dataplace.Imersao.Presentation.dll</HintPath>
-    </Reference>
     <Reference Include="dp.library.05">
       <HintPath>U:\Pack 2022.R3-S4\Install\dp.library.05.dll</HintPath>
     </Reference>
@@ -123,6 +119,10 @@
     <ProjectReference Include="..\Dataplace.Imersao.Core\Dataplace.Imersao.Core.csproj">
       <Project>{a99dc1df-d3c3-4d3b-8f10-e98c014c1c6b}</Project>
       <Name>Dataplace.Imersao.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dataplace.Imersao.Presentation\Dataplace.Imersao.Presentation.csproj">
+      <Project>{9736d215-3e4b-47ff-bb09-42446fb13798}</Project>
+      <Name>Dataplace.Imersao.Presentation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

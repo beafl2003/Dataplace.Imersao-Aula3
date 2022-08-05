@@ -53,7 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridOrcamento.GroupByCaption = "Drag a column header here to group by that column";
             this.gridOrcamento.Images.Add(((System.Drawing.Image)(resources.GetObject("gridOrcamento.Images"))));
-            this.gridOrcamento.Location = new System.Drawing.Point(3, 113);
+            this.gridOrcamento.Location = new System.Drawing.Point(4, 111);
             this.gridOrcamento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridOrcamento.Name = "gridOrcamento";
             this.gridOrcamento.PreviewInfo.Location = new System.Drawing.Point(0, 0);
@@ -62,15 +62,16 @@
             this.gridOrcamento.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.gridOrcamento.PrintInfo.MeasurementPrinterName = null;
             this.gridOrcamento.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("gridOrcamento.PrintInfo.PageSettings")));
-            this.gridOrcamento.Size = new System.Drawing.Size(1341, 555);
+            this.gridOrcamento.Size = new System.Drawing.Size(987, 417);
             this.gridOrcamento.TabIndex = 3;
             this.gridOrcamento.UseCompatibleTextRendering = false;
+            this.gridOrcamento.Click += new System.EventHandler(this.gridOrcamento_Click);
             this.gridOrcamento.PropBag = resources.GetString("gridOrcamento.PropBag");
             // 
             // btnCarregar
             // 
             this.btnCarregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCarregar.Location = new System.Drawing.Point(1235, 2);
+            this.btnCarregar.Location = new System.Drawing.Point(863, 64);
             this.btnCarregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarregar.Name = "btnCarregar";
             this.btnCarregar.Size = new System.Drawing.Size(109, 30);
@@ -86,9 +87,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSplitButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(4, 683);
+            this.toolStrip1.Location = new System.Drawing.Point(4, 538);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(122, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(122, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -102,7 +103,7 @@
             this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(109, 24);
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(109, 28);
             this.toolStripSplitButton1.Text = "Ferramentas";
             // 
             // tsiMarcar
@@ -182,11 +183,11 @@
             this.rangeDate.Label1Text = dpLibrary05.ucSymGen_ReferenceDtp.LabelTextEnum.TFrom;
             this.rangeDate.Label2Text = dpLibrary05.ucSymGen_ReferenceDtp.LabelTextEnum.TTo;
             this.rangeDate.Location = new System.Drawing.Point(229, 21);
-            this.rangeDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rangeDate.Margin = new System.Windows.Forms.Padding(5);
             this.rangeDate.Name = "rangeDate";
             this.rangeDate.OpenModal = false;
             this.rangeDate.Parameters = ((System.Collections.Generic.IDictionary<string, object>)(resources.GetObject("rangeDate.Parameters")));
-            this.rangeDate.Size = new System.Drawing.Size(635, 27);
+            this.rangeDate.Size = new System.Drawing.Size(433, 27);
             this.rangeDate.TabIndex = 1;
             this.rangeDate.TabOrderScheme = dpLibrary05.TabOrderManager.TabScheme.None;
             // 
@@ -201,7 +202,7 @@
             this.Controls.Add(this.gridOrcamento);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CancelarOrcamentoView";
-            this.Size = new System.Drawing.Size(1347, 750);
+            this.Size = new System.Drawing.Size(1010, 609);
             this.Controls.SetChildIndex(this.gridOrcamento, 0);
             this.Controls.SetChildIndex(this.btnCarregar, 0);
             this.Controls.SetChildIndex(this.toolStrip1, 0);

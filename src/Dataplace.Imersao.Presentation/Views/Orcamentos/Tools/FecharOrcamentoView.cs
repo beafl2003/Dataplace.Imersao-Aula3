@@ -154,7 +154,6 @@ namespace Dataplace.Imersao.Presentation.Views
 
         }
         #endregion
-
         #region list events
         private ViewModelListBuilder<OrcamentoViewModel> GetConfiguration()
         {
@@ -208,7 +207,7 @@ namespace Dataplace.Imersao.Presentation.Views
                   {
                       x.Add(OrcamentoStatusEnum.Aberto.ToDataValue(), 3469.ToMessage());
                       x.Add(OrcamentoStatusEnum.Fechado.ToDataValue(), 3846.ToMessage());
-                      x.Add(OrcamentoStatusEnum.Fechado.ToDataValue(), 3485.ToMessage());
+                      x.Add(OrcamentoStatusEnum.Cancelado.ToDataValue(), 3485.ToMessage());
                   });
 
             return configuration;
@@ -221,8 +220,8 @@ namespace Dataplace.Imersao.Presentation.Views
                 situacaoList.Add(Core.Domain.Orcamentos.Enums.OrcamentoStatusEnum.Aberto);
             if (chkFechado.Checked)
                 situacaoList.Add(Core.Domain.Orcamentos.Enums.OrcamentoStatusEnum.Fechado);
-            if (chkFechado.Checked)
-                situacaoList.Add(Core.Domain.Orcamentos.Enums.OrcamentoStatusEnum.Fechado);
+            if (chkCancelado.Checked)
+                situacaoList.Add(Core.Domain.Orcamentos.Enums.OrcamentoStatusEnum.Cancelado);
 
             DateTime? dtInicio = null;
             DateTime? dtFim = null;
@@ -238,6 +237,7 @@ namespace Dataplace.Imersao.Presentation.Views
         }
 
         #endregion
+
 
         #region contol events
         private async void btnCarregar_Click(object sender, EventArgs e)
@@ -281,5 +281,11 @@ namespace Dataplace.Imersao.Presentation.Views
 
         #endregion
 
+
+        private void gridOrcamento_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

@@ -280,5 +280,10 @@ namespace Dataplace.Imersao.Presentation.Views
         }
 
         #endregion
+
+        private void gridOrcamento_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
